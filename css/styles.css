@@ -11,6 +11,30 @@
  } */
 
 
+ /* цвет осн текста #212121 */
+ /* акцент #2196F3 */
+ /* вторичн цвет текста #757575 */
+ /* цвет фона вторичн #F5F4FA */
+
+ :root {
+     --primary-text-color: #757575;
+     --title-text-color: #212121;
+     --accent-color: #2196F3;
+     --primary-bg-color: #F5F4FA;
+ }
+
+ /* Загальні css дані для обох html */
+
+ body {
+     color: #757575;
+     background-color: #FFF;
+     font-family: Roboto, sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.7;
+     letter-spacing: 0.42px;
+ }
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -44,30 +68,6 @@ ul {
 }
 
 
-
-/* цвет осн текста #212121 */
-/* акцент #2196F3 */
-/* вторичн цвет текста #757575 */
-/* цвет фона вторичн #F5F4FA */
-
-:root {
---primary-text-color: #757575;
---title-text-color: #212121 ;
---accent-color: #2196F3;
---primary-bg-color: #F5F4FA;
-}
-
-/* Загальні css дані для обох html */
-
-body {
-    color: #757575;
-    background-color: #FFF;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.42px;
-}
 
 /* Header */
 
@@ -190,6 +190,7 @@ body {
 
 .hero {
     background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.png);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -343,6 +344,7 @@ padding-bottom: 94px;
     flex-shrink: 0;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .team-card + .team-card {
@@ -376,6 +378,38 @@ padding-bottom: 94px;
     background-color: var(--primary-bg-color);
 }
 
+
+/* Clients */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+
+
+
 /* Footer */
 
 .footer-section {
@@ -408,7 +442,6 @@ address {
     font-style: normal;
     line-height: 1.7;
     font-weight: 400;
-    line-height: 1.7;
     letter-spacing: 0.42px;
     text-decoration: none;
 }
@@ -420,6 +453,23 @@ address {
 
 .footer-contacts .contacts-point + .contacts-point {
     margin-top: 12px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+ 
+.footer-part + .footer-part {
+    margin-left: 70px;
+}
+
+.social-title {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 /* Стили для portfolio */
@@ -447,6 +497,10 @@ address {
     background-color: #2196F3;
 }
 
+.button-list :hover,
+.button-list :focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);;
+}
 
 .button-list {
     display: flex;
@@ -492,6 +546,13 @@ address {
 .little-container {
     width: 370px;
 }
+
+
+/* border: 1px solid #EEE;
+background: #FFF;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+0px 1px 1px 0px rgba(0, 0, 0, 0.12); */
 
 .description {
     padding: 20px 24px;
