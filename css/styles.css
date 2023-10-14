@@ -181,8 +181,27 @@ ul {
     margin-left: 40px;
 }
 
+/* Icon */
 
+/* .envelope::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background: #FFF;
+    background-image: url(../images/icon/envelope.svg);
+    background-size: contain;
+}
 
+.smartphone::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background: #FFF;
+    background-image: url();
+    background-size: contain;
+} */
 
 /* Стили для index.html */
 
@@ -190,7 +209,6 @@ ul {
 
 .hero {
     background-color: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.png);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -209,6 +227,19 @@ ul {
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+}
+
+/* Overlay */
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero1.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* background-size: cover; */
 }
 
 /* Button */
@@ -318,7 +349,33 @@ padding-bottom: 94px;
     margin-left: 30px;
 }
 
+.feature-description::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
 
+.icon-antena::before {
+    background-image: url("../images/icon/antenna.svg");
+}
+
+.icon-clock::before {
+    background-image: url("../images/icon/clock.svg");
+}
+
+.icon-diagram::before {
+    background-image: url("../images/icon/diagram.svg");
+}
+
+.icon-astronaut::before {
+    background-image: url("../images/icon/astronaut.svg");
+}
 /* Team */
 
 .team-title {
@@ -340,7 +397,7 @@ padding-bottom: 94px;
 
 .team-card {
     width: 270px;
-    height: 368px;
+    height: 428px;
     flex-shrink: 0;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -378,6 +435,27 @@ padding-bottom: 94px;
     background-color: var(--primary-bg-color);
 }
 
+/* Social icons */
+
+.socials {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.socials-link {
+display: flex;
+align-content: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: #FFFFFF;
+border-radius: 50%;
+}
+
+.socials-icons {
+
+}
 
 /* Clients */
 
