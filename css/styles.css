@@ -83,6 +83,8 @@ ul {
     margin-left: 93px;
 }
 
+
+
 .site-nav .point + .point {
     margin-left: 50px;
 }
@@ -125,12 +127,23 @@ ul {
 .point-envelope {
     padding: 0;
     margin-right: 10px;
-    
+    fill:#757575;
+}
+
+.point-envelope :hover,
+.point-envelope :focus {
+    fill: #2196F3;
 }
 
 .point-smartphone {
     padding: 0;
     margin-right: 10px;
+    fill: #757575;
+}
+
+.point-smartphone :hover,
+.point-smartphone :focus {
+    fill: #2196F3;
 }
 
 /* logo */
@@ -165,7 +178,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
-
 }
 
 .site-nav :hover,
@@ -173,9 +185,14 @@ ul {
     color: var(--accent-color);
 }
 
-.contacts :hover,
-.contacts :focus {
+.point :hover,
+.point :focus {
     color: var(--accent-color);
+}
+
+.point-envelope :hover,
+.point-envelope :focus {
+    fill: #2196F3s;
 }
 
 .contacts .link {
@@ -187,32 +204,11 @@ ul {
     margin-left: auto;
 }
 
+
 .contacts .point + .point {
     margin-left: 40px;
 }
 
-
-/* Icon */
-
-/* .envelope::before {
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background: #FFF;
-    background-image: url(../images/icon/envelope.svg);
-    background-size: contain;
-}
-
-.smartphone::before {
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background: #FFF;
-    background-image: url();
-    background-size: contain;
-} */
 
 /* Стили для index.html */
 
@@ -354,6 +350,14 @@ padding-bottom: 94px;
 
 .feature-description {
     width: 270px;
+ }
+
+.rectangle {
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px 25px 100px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 
 .feature-list .feature-description + .feature-description {
@@ -429,25 +433,32 @@ padding-bottom: 94px;
 /* Social icons */
 
 .socials {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials-link {
-display: flex;
-align-content: center;
-justify-content: center;
-background-color: #FFFFFF;
-border-radius: 50%;
-height: 44px;
-width: 44px;
-padding: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+}
+
+.socials>li :hover,
+.socials>li :focus {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
 }
 
 .socials-icon {
-
+    fill: #afb1b8;
 }
+
 
 /* Clients */
 
@@ -476,6 +487,12 @@ padding: 12px;
     justify-content: space-between
 }
 
+.clients- :hover,
+.clients-item :focus {
+border: 1px solid #2196F3;
+}
+
+
  
 .clients-item {
     width: 170px;
@@ -489,15 +506,19 @@ padding: 12px;
     flex-basis: calc((100% - 150px) / 6);
 } */
 
+
 .clients-link {
 padding: 0;
 }
 
-
 .client-logo {
-
+    fill: #AFB1B8;
 }
 
+.client-logo :hover,
+.client-logo :focus {
+    fill: #2196F3;
+}
 
 
 /* Footer */
@@ -555,12 +576,43 @@ address {
 }
 
 .social-title {
+    padding-top: 0;
+    margin-top: 0;
     color: #FFF;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
+
+
+.attend {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+
+.ellipse {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #FFFFFF1A;
+}
+
+.attend :hover,
+.attend :focus {
+    background-color: #2196F3;;
+}
+
+.social-footer {
+fill: #FFFFFF;
+margin-right: 0;
+margin-bottom: 0;
+}
+
 
 /* Стили для portfolio */
 
@@ -610,6 +662,12 @@ address {
     gap: 30px;
     padding: 0;
     list-style: none;
+}
+
+.project-list :hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .project-list h2 {
