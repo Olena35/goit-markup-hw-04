@@ -122,6 +122,16 @@ ul {
     text-decoration: none;
 }
 
+.point-envelope {
+    padding: 0;
+    margin-right: 10px;
+    
+}
+
+.point-smartphone {
+    padding: 0;
+    margin-right: 10px;
+}
 
 /* logo */
 
@@ -180,6 +190,7 @@ ul {
 .contacts .point + .point {
     margin-left: 40px;
 }
+
 
 /* Icon */
 
@@ -349,33 +360,12 @@ padding-bottom: 94px;
     margin-left: 30px;
 }
 
-.feature-description::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-    background: #F5F4FA;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
+.feature-icon {
+ width: 70px;
+ height: 70px;
 }
 
-.icon-antena::before {
-    background-image: url("../images/icon/antenna.svg");
-}
 
-.icon-clock::before {
-    background-image: url("../images/icon/clock.svg");
-}
-
-.icon-diagram::before {
-    background-image: url("../images/icon/diagram.svg");
-}
-
-.icon-astronaut::before {
-    background-image: url("../images/icon/astronaut.svg");
-}
 /* Team */
 
 .team-title {
@@ -424,6 +414,7 @@ padding-bottom: 94px;
     line-height: 1.19;
     letter-spacing: 0.48px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .card-info {
@@ -447,13 +438,14 @@ align-items: center;
 display: flex;
 align-content: center;
 justify-content: center;
-width: 44px;
-height: 44px;
 background-color: #FFFFFF;
 border-radius: 50%;
+height: 44px;
+width: 44px;
+padding: 12px;
 }
 
-.socials-icons {
+.socials-icon {
 
 }
 
@@ -478,13 +470,33 @@ border-radius: 50%;
 
 .clients-list {
     display: flex;
-    gap: 30px;
+    padding: 0;
+    margin: 0;
+    /* gap: 30px; */
+    justify-content: space-between
+}
+
+ 
+.clients-item {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 .clients-item {
     flex-basis: calc((100% - 150px) / 6);
+} */
+
+.clients-link {
+padding: 0;
 }
 
+
+.client-logo {
+
+}
 
 
 
