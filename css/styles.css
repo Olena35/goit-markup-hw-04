@@ -84,7 +84,6 @@ ul {
 }
 
 
-
 .site-nav .point + .point {
     margin-left: 50px;
 }
@@ -124,27 +123,6 @@ ul {
     text-decoration: none;
 }
 
-.point-envelope {
-    padding: 0;
-    margin-right: 10px;
-    fill:#757575;
-}
-
-.point-envelope :hover,
-.point-envelope :focus {
-    fill: #2196F3;
-}
-
-.point-smartphone {
-    padding: 0;
-    margin-right: 10px;
-    fill: #757575;
-}
-
-.point-smartphone :hover,
-.point-smartphone :focus {
-    fill: #2196F3;
-}
 
 /* logo */
 
@@ -185,15 +163,6 @@ ul {
     color: var(--accent-color);
 }
 
-.point :hover,
-.point :focus {
-    color: var(--accent-color);
-}
-
-.point-envelope :hover,
-.point-envelope :focus {
-    fill: #2196F3s;
-}
 
 .contacts .link {
     text-decoration: none;
@@ -202,6 +171,28 @@ ul {
 .contacts {
     display: flex;
     margin-left: auto;
+    gap: 30px;
+    }
+
+.point {
+    display: flex;
+    color: #AFB1B8;
+}
+
+.point:hover,
+.point:focus {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+.point-envelope {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.point-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 
@@ -353,9 +344,11 @@ padding-bottom: 94px;
  }
 
 .rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px 25px 100px;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
@@ -430,35 +423,36 @@ padding-bottom: 94px;
     background-color: var(--primary-bg-color);
 }
 
-/* Social icons */
 
 .socials {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .socials-link {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    border-radius: 50%;
     height: 44px;
     width: 44px;
-    padding: 12px;
-}
-
-.socials>li :hover,
-.socials>li :focus {
-    background-color: var(--accent-color);
-    fill: #FFFFFF;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
 
 .socials-icon {
-    fill: #afb1b8;
+    fill: currentColor;
 }
 
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
 
 /* Clients */
 
@@ -483,42 +477,40 @@ padding-bottom: 94px;
     display: flex;
     padding: 0;
     margin: 0;
-    /* gap: 30px; */
-    justify-content: space-between
+    gap: 30px;
 }
-
-.clients- :hover,
-.clients-item :focus {
-border: 1px solid #2196F3;
-}
-
 
  
 .clients-item {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px 16px 32px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+ 
 }
 
-.clients-item {
+/* .clients-item {
     flex-basis: calc((100% - 150px) / 6);
-} */
+} */ 
+
 
 
 .clients-link {
-padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+border: 1px solid currentColor;
+width: 170px;
+height: 92px;
+color: #AFB1B8;
 }
 
 .client-logo {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-.client-logo :hover,
-.client-logo :focus {
-    fill: #2196F3;
+.clients-link:hover,
+.clients-link:focus {
+    color: #2196F3;
 }
+
 
 
 /* Footer */
@@ -595,15 +587,17 @@ address {
 
 
 .ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
     border-radius: 50px;
     background-color: #FFFFFF1A;
 }
 
-.attend :hover,
-.attend :focus {
+.ellipse:hover,
+.ellipse:focus {
     background-color: #2196F3;;
 }
 
@@ -616,7 +610,6 @@ margin-bottom: 0;
 
 /* Стили для portfolio */
 
-/* Projects */
 
 /* Button list for portfolio */
 
@@ -634,15 +627,15 @@ margin-bottom: 0;
     text-align: center;
 }
 
-.button-list button:hover {
+.button-list button:hover,
+.button-list button:focus{
     color: var(--primary-bg-color);
     background-color: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.button-list :hover,
-.button-list :focus {
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);;
-}
+    
+
 
 .button-list {
     display: flex;
@@ -664,10 +657,16 @@ margin-bottom: 0;
     list-style: none;
 }
 
-.project-list :hover {
+.card-link {
+    display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+            0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+ 
 }
 
 .project-list h2 {
@@ -696,11 +695,6 @@ margin-bottom: 0;
 }
 
 
-/* border: 1px solid #EEE;
-background: #FFF;
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-0px 1px 1px 0px rgba(0, 0, 0, 0.12); */
 
 .description {
     padding: 20px 24px;
